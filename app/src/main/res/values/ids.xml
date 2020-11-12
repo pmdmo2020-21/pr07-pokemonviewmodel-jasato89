@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="bulbasurSelectorImg" type="id" />
+    <item name="guideline4" type="id" />
+    <item name="guideline5" type="id" />
+    <item name="guideline6" type="id" />
+    <item name="guideline7" type="id" />
+    <item name="guideline8" type="id" />
+    <item name="guideline9" type="id" />
+    <item name="guideline10" type="id" />
+    <item name="bulbasurRdb" type="id" />
+    <item name="giratinaSelectorImg" type="id" />
+    <item name="giratinaRdb" type="id" />
+    <item name="cuboneSelectorImg" type="id" />
+    <item name="feebasSelectorImg" type="id" />
+    <item name="gyaradosRdb" type="id" />
+    <item name="pikachuSelectorImg" type="id" />
+    <item name="gyaradosSelectorImg" type="id" />
+    <item name="cuboneRdb" type="id" />
+    <item name="feebasRdb" type="id" />
+    <item name="pikachuRdb" type="id" />
+</resources>
