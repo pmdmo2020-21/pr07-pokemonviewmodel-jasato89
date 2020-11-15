@@ -2,6 +2,7 @@ package es.iessaladillo.jaumesanchez.pr07_pokemonviewmodel_jasato89.local
 
 import es.iessaladillo.jaumesanchez.pr07_pokemonviewmodel_jasato89.R
 import es.iessaladillo.jaumesanchez.pr07_pokemonviewmodel_jasato89.local.model.Pokemon
+import java.lang.NullPointerException
 
 import kotlin.random.Random.Default.nextInt
 
@@ -21,26 +22,18 @@ object Database : DataSource {
         return pokemonList[nextInt(6)]
     }
 
-    fun getRandomPokemon(pokemon: Pokemon): Pokemon {
-        lateinit var pokemon2: Pokemon
-        do {
-            pokemon2 = getRandomPokemon()
-        } while (pokemon.id == pokemon2.id)
-
-        return pokemon2
-    }
 
     override fun getAllPokemons(): List<Pokemon> {
         return pokemonList
     }
 
-    override fun getPokemonById(id: Long): Pokemon? {
+    override fun getPokemonById(id: Long): Pokemon {
         for (pokemon in pokemonList) {
             if (pokemon.id.toLong()== id){
                 return pokemon
             }
         }
-        return null
+        throw NullPointerException()
     }
 
 }
