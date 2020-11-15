@@ -21,6 +21,15 @@ object Database : DataSource {
         return pokemonList[nextInt(6)]
     }
 
+    fun getRandomPokemon(pokemon: Pokemon): Pokemon {
+        lateinit var pokemon2: Pokemon
+        do {
+            pokemon2 = getRandomPokemon()
+        } while (pokemon.id == pokemon2.id)
+
+        return pokemon2
+    }
+
     override fun getAllPokemons(): List<Pokemon> {
         return pokemonList
     }
